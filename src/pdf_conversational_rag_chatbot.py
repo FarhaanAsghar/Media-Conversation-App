@@ -129,16 +129,16 @@ class PDFChatbot:
         )
         
         # QA system prompt
-       system_prompt = (
-    "You are an assistant for question-answering tasks. "
-    "Use the following pieces of retrieved context to answer "
-    "the question. If you don't know the answer, say that you "
-    "don't know. Answer only based on the provided content. "
-    "If the question is not relevant to the provided context, "
-    "say the question is not relevant."
-    "\n\n"
-    "{context}"
-)
+        system_prompt = (
+            "You are an assistant for question-answering tasks. "
+            "Use the following pieces of retrieved context to answer "
+            "the question. If you don't know the answer, say that you "
+            "don't know. Answer only based on the provided content. "
+            "If the question is not relevant to the provided context, "
+            "say the question is not relevant."
+            "\n\n"
+            "{context}"
+        )
 
         
         # QA prompt
