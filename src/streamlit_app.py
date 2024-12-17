@@ -131,7 +131,7 @@ def main():
     if uploaded_file and google_api_key:
         # Determine file type
         file_extension = os.path.splitext(uploaded_file.name)[1].lower()
-        
+        st.session_state.chatbot = None
         # Save uploaded file
         temp_file_path = save_uploaded_file(uploaded_file)
         st.session_state.file_type = file_extension
