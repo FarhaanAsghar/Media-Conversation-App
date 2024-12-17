@@ -95,7 +95,9 @@ def create_pdf_from_text(text, prefix='transcription'):
 
 def main():
     setup_page_config()
-    del st.session_state[key]
+    if st.session_state:
+        for key in list(st.session_state.keys()):
+                del st.session_state[key]
     initialize_session_state()
 
     st.title("Transcription & Q&A Assistant")
