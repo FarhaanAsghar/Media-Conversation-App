@@ -98,7 +98,7 @@ def main():
     initialize_session_state()
 
     st.title("Media Conversation App")
-    st.write("Transcription & Q&A Assistant"),
+    st.write("Transcription & Q&A Assistant")
 
     # File Upload Section
     uploaded_file = st.file_uploader(
