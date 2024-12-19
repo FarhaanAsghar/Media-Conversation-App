@@ -40,6 +40,7 @@ def initialize_session_state():
         st.session_state.pdf_uploaded_directly = False
 
 def save_uploaded_file(uploaded_file):
+    initialize_session_state()
     """Save uploaded file to a temporary location"""
     with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(uploaded_file.name)[1]) as temp_file:
         temp_file.write(uploaded_file.getvalue())
