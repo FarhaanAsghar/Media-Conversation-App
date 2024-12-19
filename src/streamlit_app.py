@@ -21,7 +21,6 @@ def setup_page_config():
         page_icon="🤖",
         layout="wide"
     )
-    st.write("Transcription & Q&A Assistant")
 
 def initialize_session_state():
     """Initialize or reset session state variables"""
