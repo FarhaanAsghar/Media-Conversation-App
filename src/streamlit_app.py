@@ -18,10 +18,10 @@ def setup_page_config():
     """Configure Streamlit page settings"""
     st.set_page_config(
         page_title="Media Conversation App",
-        st.write("Transcription & Q&A Assistant"),
         page_icon="🤖",
         layout="wide"
     )
+    st.write("Transcription & Q&A Assistant")
 
 def initialize_session_state():
     """Initialize or reset session state variables"""
