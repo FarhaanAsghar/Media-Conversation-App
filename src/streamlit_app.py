@@ -17,7 +17,8 @@ import torch
 def setup_page_config():
     """Configure Streamlit page settings"""
     st.set_page_config(
-        page_title="Transcription & Q&A Assistant",
+        page_title="Media Conversation App",
+        st.write("Transcription & Q&A Assistant"),
         page_icon="🤖",
         layout="wide"
     )
@@ -57,7 +58,7 @@ def create_pdf_from_text(text, prefix='transcription'):
     from reportlab.pdfbase.ttfonts import TTFont
 
     # Register a TrueType font
-    pdfmetrics.registerFont(TTFont('Arial', './Arial.ttf'))
+    pdfmetrics.registerFont(TTFont('Arial', '/kaggle/working/Arial.ttf'))
 
     c = canvas.Canvas(temp_pdf_path, pagesize=letter)
     width, height = letter
