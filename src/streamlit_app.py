@@ -97,7 +97,8 @@ def main():
     setup_page_config()
     initialize_session_state()
 
-    st.title("Transcription & Q&A Assistant")
+    st.title("Media Conversation App")
+    st.write("Transcription & Q&A Assistant"),
 
     # File Upload Section
     uploaded_file = st.file_uploader(
